@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	
+	<!-- 
+	  -- Include references to stylesheets and scripts here, using the path_to() function
+	  -- to get relative paths to the files. The paths are relative to the site root. 
+	  -->
+	
+	<link rel="stylesheet" href="<%= path_to('styles/blueprint/screen.css') %>" type="text/css" media="screen, projection"> 
+	<link rel="stylesheet" href="<%= path_to('styles/blueprint/print.css') %>" type="text/css" media="print"> 
+	<!--[if lt IE 8]><link rel="stylesheet" href="<%= path_to('styles/blueprint/ie.css') %>" type="text/css" media="screen, projection"><![endif]-->
+	
+	<link rel="stylesheet" href="<%= path_to('styles/blog.css') %>" type="text/css" media="screen, projection"> 
+	
+</head>
+<body>
+	
+	<div class="container hd">
+		<div class="prepend-4 span-16">
+			<h1><%= title %></h1>
+		</div>
+	</div>
+	<div class="container nv">
+		<div class="prepend-4 span-16">
+			<ul>
+				<li><%= link_to_page('index', 'Home') %></li>
+				<li><%= link_to_page('archive', 'All Posts') %></li>
+				<div style="clear:both"></div>
+			</ul>
+		</div>
+	</div>
+	<div class="container bd">
+		<div class="prepend-4 span-16">
+			<!-- Wrap your style around the content variable -->
+			<%= content %>
+		</div>
+	</div>
+	<div class="container ft">
+		<div class="prepend-4 span-16">
+			<p>Powered by <a href="https://github.com/schrockwell/chisel">Chisel</a></p>
+		</div>
+	</div>
+	
+</body>
+</html>

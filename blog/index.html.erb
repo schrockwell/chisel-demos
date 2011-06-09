@@ -1,0 +1,10 @@
+---
+layout: main
+title: My Special Blog
+---
+
+<% BlogPost.unarchived.reverse[0..9].each do |post| %>
+	
+	<%= render('blog_post/post', :locals => { :post => post }) %>
+	
+<% end %>

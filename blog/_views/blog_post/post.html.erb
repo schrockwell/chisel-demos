@@ -1,0 +1,7 @@
+<div style="float:right; font-size:1.5em; font-style: italic">
+	<%= post.date.strftime('%B %e, %Y') %>
+</div>
+
+<h2><%= link_to_resource(post, "#{post.title}") %></h2>
+
+<%= post.content %>

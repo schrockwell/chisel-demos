@@ -1,0 +1,6 @@
+---
+title: Archived post
+archived: true
+---
+
+This post is not on the front page!

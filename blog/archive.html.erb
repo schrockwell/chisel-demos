@@ -1,0 +1,10 @@
+---
+layout: main
+title: My Special Blog - Archive
+---
+
+<ul>
+	<% BlogPost.all.reverse.each do |post| %>
+		<li><%= link_to_resource(post, "#{post.date.strftime('%Y-%m-%d')} - #{post.title}") %></li>
+	<% end %>
+</ul>

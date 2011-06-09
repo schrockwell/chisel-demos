@@ -1,0 +1,27 @@
+div.hd {
+	margin-top: 1em;
+}
+
+div.nv ul {
+	margin: 0 0 1em 0;
+	padding: 0 0 1em 0;
+	border-bottom: 1px solid #ccc;
+}
+
+div.nv ul li {
+	float: left;
+	list-style: none;
+	padding-right: 2em;
+}
+
+div.ft {
+	font-style: italic;
+}
+
+div.ft, div.ft a {
+	color: #999;
+}
+
+div.ft a:hover {
+	color: #666;
+}

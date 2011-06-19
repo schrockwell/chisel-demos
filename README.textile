@@ -1,0 +1,5 @@
+This is a collection of simple Web sites to demonstrate the capabilities of Chisel.
+
+Don't re-invent the wheel! You are encouraged to copy and repurpose them for your personal use.
+
+"More information about Chisel":https://github.com/schrockwell/chisel
